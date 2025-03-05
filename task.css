@@ -121,6 +121,13 @@ header {
   max-width: 1400px;
   width: 100%;
   margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.new_ads h2 {
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 2rem;
 }
 
 .gaming_categories {
@@ -128,12 +135,89 @@ header {
   grid-template-columns: repeat(5, 1fr);
 }
 
-.equipment_models {
-  display: grid;
-  grid-template-columns: repeat(9, 1fr);
-}
-
 .cards {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+}
+
+.gaming_categories .button:first-child {
+  background-color: var(--secondary-background-color);
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: unset;
+  background-color: unset;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 1.5rem 0;
+  cursor: pointer;
+  transition: color 0.15s ease-in-out;
+}
+
+.button:hover {
+  color: #fad318;
+}
+
+button svg {
+  margin-right: 10px;
+}
+
+.button svg path {
+  fill: #b3aac9;
+}
+
+.equipment_models {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  background-color: var(--secondary-background-color);
+}
+
+.equipment_models li {
+  position: relative;
+  padding: 10px;
+  height: 72px;
+}
+
+.equipment_models li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.equipment_models li svg {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  transition: top 0.15s ease-in-out;
+}
+
+.equipment_models li:hover svg {
+  top: calc(50% - 9px);
+}
+
+.equipment_models li:hover svg path {
+  fill: #fad318;
+}
+
+.equipment_models li span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: top 0.15s ease-in-out, opacity 0.15s ease-in-out;
+  color: #dcd8e6;
+  font-size: 13px;
+  opacity: 0;
+}
+
+.equipment_models li:hover span {
+  top: calc(50% + 17px);
+  opacity: 1;
 }
