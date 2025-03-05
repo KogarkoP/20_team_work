@@ -280,18 +280,34 @@ button svg {
   margin-top: 3rem;
 }
 
+.card {
+  overflow: hidden;
+  height: 470px;
+}
+
+.img_wrapper {
+  height: 300px;
+}
+
 .img_wrapper img {
   object-fit: cover;
   width: 100%;
   object-position: center;
-  height: 300px;
+  height: 100%;
 }
 
 .card_content {
   display: flex;
+  position: relative;
   flex-direction: column;
   background-color: var(--card-background-color);
   padding: 15px;
+  z-index: 10;
+  transition: transform 0.5s ease-in-out;
+}
+
+.card:hover .card_content {
+  transform: translateY(-100px);
 }
 
 .card_content h3 {
@@ -313,4 +329,52 @@ button svg {
 
 .advertisements_count strong {
   color: #fff;
+}
+
+.purchase_button {
+  padding: 0.5rem 0;
+  background-color: #fad318;
+  border: none;
+  font-size: 1rem;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.purchase_button:hover {
+  background-color: #f0a613;
+}
+
+.ads_button {
+  padding: 0.5rem 0;
+  background-color: unset;
+  border: 1px solid #fff;
+  font-size: 1rem;
+  font-weight: 900;
+  color: #fff;
+  letter-spacing: 0.5px;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.button2 {
+  display: block;
+  width: 200px;
+  padding: 0.5rem 0;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  border: 1px solid #fff;
+  color: #fff;
+  margin: 2rem auto;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+}
+
+.button2:hover,
+.ads_button:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-color: #fad318;
 }
