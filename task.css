@@ -23,6 +23,29 @@ body {
 }
 
 header {
+  display: flex;
   width: 100px;
   background-color: var(--main-background-color);
+}
+
+.mobile_header {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .search_bar {
+    display: none;
+  }
+  .language_curency {
+    display: none;
+  }
+  .login_register {
+    display: none;
+  }
+  .sell_button {
+    display: none;
+  }
+  .mobile_header {
+    display: flex;
+  }
 }
