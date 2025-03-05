@@ -14,3 +14,9 @@
 body {
   min-width: 370px;
 }
+
+:root {
+  --main-background-color: #4618ac;
+  --secondary-background-color: #351183;
+  --main-text-color: #fff;
+}
