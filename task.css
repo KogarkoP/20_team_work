@@ -13,6 +13,7 @@
 
 body {
   min-width: 370px;
+  background-color: var(--main-background-color);
 }
 
 :root {
