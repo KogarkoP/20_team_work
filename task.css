@@ -188,6 +188,8 @@ button svg {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+  height: 100%;
 }
 
 .equipment_models li svg {
@@ -220,4 +222,27 @@ button svg {
 .equipment_models li:hover span {
   top: calc(50% + 17px);
   opacity: 1;
+}
+
+.equipment_models li:last-child a {
+  width: 100px;
+  text-align: center;
+  color: #b3aac9;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.equipment_models li:last-child:hover a {
+  color: #fad318;
+}
+
+.equipment_models li:last-child::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translatey(-50%);
+  height: 80%;
+  width: 1px;
+  background-color: var(--main-background-color);
+  left: 0;
 }
