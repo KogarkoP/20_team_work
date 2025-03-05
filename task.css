@@ -18,11 +18,13 @@ a {
 body {
   min-width: 370px;
   background-color: var(--main-background-color);
+  color: #fff;
 }
 
 :root {
   --main-background-color: #4618ac;
   --secondary-background-color: #351183;
+  --card-background-color: #1f0a4d;
   --main-text-color: #fff;
 }
 
@@ -163,11 +165,6 @@ input .input {
   grid-template-columns: repeat(5, 1fr);
 }
 
-.cards {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-}
-
 .gaming_categories .button:first-child {
   background-color: var(--secondary-background-color);
 }
@@ -258,6 +255,7 @@ button svg {
   color: #b3aac9;
   font-weight: 500;
   font-size: 17px;
+  margin: 0 auto;
 }
 
 .equipment_models li:last-child:hover a {
@@ -273,4 +271,46 @@ button svg {
   width: 1px;
   background-color: var(--main-background-color);
   left: 0;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+.img_wrapper img {
+  object-fit: cover;
+  width: 100%;
+  object-position: center;
+  height: 300px;
+}
+
+.card_content {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--card-background-color);
+  padding: 15px;
+}
+
+.card_content h3 {
+  font-size: 17px;
+  height: 70px;
+  overflow: hidden;
+}
+
+.advertisements_count,
+.shipping_cost {
+  color: #ffffff80;
+  font-size: 15px;
+}
+
+.card_content .price {
+  font-size: 1.75rem;
+  font-weight: 500;
+}
+
+.advertisements_count strong {
+  color: #fff;
 }
