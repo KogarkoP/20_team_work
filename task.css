@@ -21,3 +21,8 @@ body {
   --secondary-background-color: #351183;
   --main-text-color: #fff;
 }
+
+header {
+  width: 100px;
+  background-color: var(--main-background-color);
+}
