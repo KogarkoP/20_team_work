@@ -24,12 +24,46 @@ body {
 
 header {
   display: flex;
-  width: 100px;
+  /* flex-direction: row; */
+  justify-content: center;
+  align-items: center;
+  height: 100px;
   background-color: var(--main-background-color);
 }
+.main_header {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
 
+.logo img {
+  height: 80px;
+}
+
+.search_bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.language_curency {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.login_register {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.sell_button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 .mobile_header {
   display: none;
+  flex-direction: row;
+  align-items: center;
 }
 
 @media screen and (max-width: 600px) {
