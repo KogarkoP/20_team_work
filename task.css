@@ -13,10 +13,16 @@
 
 body {
   min-width: 370px;
+  background-color: var(--main-background-color);
 }
 
 :root {
   --main-background-color: #4618ac;
   --secondary-background-color: #351183;
   --main-text-color: #fff;
+}
+
+header {
+  width: 100px;
+  background-color: var(--main-background-color);
 }
