@@ -11,6 +11,10 @@
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   min-width: 370px;
   background-color: var(--main-background-color);
@@ -34,32 +38,61 @@ header {
   display: flex;
   align-items: center;
   flex-direction: row;
+  gap: 1rem;
+}
+
+.logo {
+  display: flex;
+  gap: 3rem;
 }
 
 .logo img {
-  height: 80px;
+  height: 50px;
 }
 
 .search_bar {
   display: flex;
   flex-direction: row;
   align-items: center;
+  border: solid;
+  border-color: wheat;
+  color: white;
 }
+
 .language_curency {
   display: flex;
   flex-direction: row;
   align-items: center;
+  text-decoration: none;
 }
+
+.language_curency a {
+  color: white;
+}
+
 .login_register {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
+.login_register img {
+  height: 35px;
+}
+
+.login_register a {
+  color: white;
+}
+
 .sell_button {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
+
+.sell_button a {
+  color: white;
+}
+
 .mobile_header {
   display: none;
   flex-direction: row;
