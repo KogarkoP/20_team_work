@@ -58,10 +58,15 @@ header {
 
 .gaming_categories {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.equipment_models {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
 }
 
 .cards {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(5, 1fr);
 }
